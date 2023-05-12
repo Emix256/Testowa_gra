@@ -1,5 +1,8 @@
 body {
   text-align:center;
   font-size:80px;
-  button-size:80px;
+}
+#start {
+  width:80px;
+  height:40px;
 }
