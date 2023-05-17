@@ -5,6 +5,11 @@ h1 {
 #wybory {
   text-align:center;
 }
+#zdanie {
+  width:200px;
+  height:400px;
+  font-size:90px;
+}
 #btn {
   width:230px;
   height:90px;
