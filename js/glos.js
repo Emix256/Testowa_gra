@@ -1,8 +1,6 @@
-let x;
+let x = document.getElementById("zdanie").value;
 
-x = document.getElementById("zdanie").value;
 document.getElementById("btn").onclick = function(){
-  var msg = "hello! Am i working?";
-  const utterance = new SpeechSynthesisUtterance(msg);
+  let utterance = new SpeechSynthesisUtterance(x);
   SpeechSynthesis.speak(utterance);
 }
