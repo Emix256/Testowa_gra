@@ -5,8 +5,8 @@ przycisk.addEventListener('click', () => {
   playText(tekst.value)
 });
 
-function playText(tekst) {
-  const utterance = new SpeechSynthesistUtterance(tekst)
+function playText(zdanie) {
+  const utterance = new SpeechSynthesistUtterance(zdanie)
   utterance.rate = 1
   speechSynthesist.speak(utterance)
 };
