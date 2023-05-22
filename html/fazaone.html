@@ -13,6 +13,26 @@
   <textarea id=zdanie></textarea>
   <button id=btn>Czytaj</button>
 </div>
-<script scr="js/glos.js"></script>
+<script scr="javascript">
+const przycisk = document.getElemntById("btn");
+
+const tekst = document.getElementById("zdanie");
+
+przycisk.addEventListener('click', () => {
+
+  playText(tekst.value)
+
+});
+
+function playText(zdanie) {
+
+  const utterance = new SpeechSynthesistUtterance(zdanie)
+
+  utterance.rate = 1
+
+  speechSynthesist.speak(utterance)
+
+};
+</script>
 </body>
 </html>
